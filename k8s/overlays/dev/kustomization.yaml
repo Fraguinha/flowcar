@@ -1,0 +1,18 @@
+resources:
+  - ../../base
+
+patches:
+  - target:
+      kind: Deployment
+      name: flowcar-deployment
+    patch: |-
+      apiVersion: apps/v1
+      kind: Deployment
+      metadata:
+        name: flowcar-deployment
+      spec:
+        template:
+          spec:
+            containers:
+              - name: flowcar-webapp
+                image: k3d-flowcar-registry.localhost:5000/fraguinha/flowcar-webapp

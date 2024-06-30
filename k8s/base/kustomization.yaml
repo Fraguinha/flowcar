@@ -1,0 +1,10 @@
+resources:
+  - database/persistent-volume-claim.yaml
+  - database/persistent-volume.yaml
+  - database/postgresql-config.yaml
+  - database/postgresql-deployment.yaml
+  - database/postgresql-job.yaml
+  - database/postgresql-service.yaml
+  - webapp/flowcar-deployment.yaml
+  - webapp/flowcar-ingress.yaml
+  - webapp/flowcar-service.yaml
