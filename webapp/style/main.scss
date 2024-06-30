@@ -1,0 +1,21 @@
+@import 'ratios';
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.fullscreen {
+  min-height: 100vh !important;
+}
+
+.nav-item.dropdown .dropdown-item:active {
+  background-color: var(--bs-light) !important;
+}
+
+@media (min-width: 992px) {
+  .conditional-shadow {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+}
